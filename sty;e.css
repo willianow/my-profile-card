@@ -16,8 +16,11 @@ body {
 }
 
 .card img {
-    width: 100px;
-    border-radius: 50%;
+    max-width: 100%; /* Supaya gambar tidak melebihi lebar parent */
+    height: auto; /* Menjaga proporsi gambar */
+    display: block; /* Menghindari margin bawaan inline */
+    margin: 0 auto; /* Pusatkan gambar */
+    border-radius: 10px; /* Opsional: membuat sudut gambar lebih halus */
 }
 
 .github-logo {
